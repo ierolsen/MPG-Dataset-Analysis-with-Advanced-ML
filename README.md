@@ -66,7 +66,7 @@ I fixed target values. Then I will fix features variables.
 
 Target values has been fixed, Horsepower is so close to 1, I don’t need to fix that
 
-Bu if have to do it I would be using **Box Cox Transformation****.** With this method you can fix Skewness values.
+Bu if have to do it I would be using **Box Cox Transformation**. With this method you can fix Skewness values.
 
 ---
 
