@@ -3,6 +3,8 @@ In this project I worked on [Auto-MPG Dataset](https://www.kaggle.com/uciml/auto
 During the project, I applied different ML techniques likes Ridge Regression, Losso Regression, Outlier Detection, etc.
 I am going to explain something about code at below
 
+----
+
 **Why did I define something called threshold?**
 
 The purpose is more visibility on pair plot and other purpose is minimize the correlation matrix.
@@ -31,13 +33,16 @@ After Box Plot, I am really sure now, Horsepower and Acceleration have outliers.
 After finding Outliers, as you can see, shape is reduced. I will apply these codes for acceleration. After all that, last shape is **(392,8)**
 It means totally 6 Outliers has been removed with these filters.
 
+------
+
 **Feature Engineering**
 
 **1-)** **Skewness**
 
 ![Picture6](https://user-images.githubusercontent.com/30235603/78386392-29a79d80-75e6-11ea-9f95-7d5d26dc4664.png)
 
-3rd momentum of data gives value of Skewness. I will use scipy library for calculating that. (Skewness > 1 -> positive, Skewness < -1 -> negative)
+
+3rd momentum of data gives value of Skewness. I will use scipy library for calculating that. (Skewness > 1 = positive, Skewness < -1 = negative)
 
 Also Skewness is named Outliers of our data in tail field.
 
@@ -55,10 +60,13 @@ We can get an idea check out Histogram for how much Gauss ( there is Normal Dist
 
 You can see the Skewness at tails. I will figure out that with np.log1b (Log Transform)
 
+----
 
 After Log Transform value of Skewness was minimized.
 
 ![Picture9](https://user-images.githubusercontent.com/30235603/78386461-47750280-75e6-11ea-8654-b5a7c6da4006.png)
+
+----
 
 I fixed target values. Then I will fix features variables.
 
@@ -95,3 +103,5 @@ If COEFs isn’t necessary, Lasso gives 0 ‘em all. Ridge don’t do that. The 
 **Elastic Net:**
 
 We can say mixture of Lasso and Ridge. It is used for Feature Extraction.
+
+-----
